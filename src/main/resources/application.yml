@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: curvova_bank
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banking_system
+    username: postgres
+    password: 1397
+    driverClassName: org.postgresql.Driver
+
+logging:
+  level:
+    root: INFO
+  pattern:
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  file:
+    name: log-file.log

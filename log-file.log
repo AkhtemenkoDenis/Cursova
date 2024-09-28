@@ -1,0 +1,356 @@
+2024-09-25 20:20:00,747 INFO  [main] com.application.cursova.CursovaApplication : Starting CursovaApplication using Java 21 with PID 22576 (C:\Users\Admin\IdeaProjects\Cursova\target\classes started by Admin in C:\Users\Admin\IdeaProjects\Cursova)
+2024-09-25 20:20:00,748 INFO  [main] com.application.cursova.CursovaApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-25 20:20:01,252 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25 20:20:01,298 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 5 JPA repository interfaces.
+2024-09-25 20:20:01,495 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-25 20:20:01,520 INFO  [main] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-25 20:20:01,916 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-09-25 20:20:01,928 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-09-25 20:20:01,929 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-09-25 20:20:01,989 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-09-25 20:20:01,990 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1207 ms
+2024-09-25 20:20:02,222 INFO  [main] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25 20:20:02,326 INFO  [main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25 20:20:02,360 INFO  [main] org.hibernate.cache.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-09-25 20:20:02,641 INFO  [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25 20:20:02,663 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2024-09-25 20:20:02,790 INFO  [main] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10d4b573
+2024-09-25 20:20:02,792 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2024-09-25 20:20:02,816 WARN  [main] org.hibernate.orm.deprecation : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-25 20:20:03,487 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25 20:20:03,553 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25 20:20:04,042 INFO  [main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25 20:20:04,491 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25 20:20:04,527 INFO  [main] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-09-25 20:20:04,911 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27f7db5a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6245303e, org.springframework.security.web.context.SecurityContextHolderFilter@4eb2a0c2, org.springframework.security.web.header.HeaderWriterFilter@59f0ef6e, org.springframework.web.filter.CorsFilter@5a1e28ee, org.springframework.security.web.authentication.logout.LogoutFilter@7b14e7dc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@78181f7f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fad48b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ef3f72c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b208574, org.springframework.security.web.access.ExceptionTranslationFilter@3e8cf854, org.springframework.security.web.access.intercept.AuthorizationFilter@8551ee6]
+2024-09-25 20:20:05,325 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25 20:20:05,330 INFO  [main] com.application.cursova.CursovaApplication : Started CursovaApplication in 4.933 seconds (process running for 5.432)
+2024-09-25 20:20:11,315 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25 20:20:11,315 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-09-25 20:20:11,316 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-09-25 20:20:11,338 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:20:11,444 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/accounts
+2024-09-25 20:20:11,458 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getAllAccounts
+2024-09-25 20:20:11,460 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findAll
+2024-09-25 20:20:11,476 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getAllAccounts
+2024-09-25 20:20:11,511 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":1,"owner":"Akhtemenko Denys Viktorovych","balance":1000.00},{"id":3,"owner":"Sidorova Maria Sergeevna","balance":1500.00},{"id":4,"owner":"Volkov Nikolay Pavlovich","balance":500.00},{"id":10,"owner":"Popov Volodymyr Denysovych","balance":7000.00},{"id":5,"owner":"Loban Petro Volodymyrovych","balance":3500.00},{"id":2,"owner":"Petrov Ivan Ivanovich","balance":1500.00},{"id":7,"owner":"Nomerka Matviy Vitaliyovych","balance":5000.00},{"id":8,"owner":"Kovalenko Maksym Volodymyrovych","balance":700.00},{"id":9,"owner":"Shapar Viktor Petrovych","balance":350.00},{"id":13,"owner":"Arava Pavlo Valeriyovych","balance":2900.00},{"id":14,"owner":"Golova Iryna Mykolayivna","balance":3000.00},{"id":12,"owner":"Zhuk Anastasia Mykolayivna","balance":1200.00}]
+2024-09-25 20:20:11,534 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:20:15,005 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:20:15,008 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/accounts/1
+2024-09-25 20:20:15,018 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getAccountById
+2024-09-25 20:20:15,021 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Введені значення: [1]
+2024-09-25 20:20:15,023 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:20:15,031 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getAccountById
+2024-09-25 20:20:15,031 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":1,"owner":"Akhtemenko Denys Viktorovych","balance":1000.00}
+2024-09-25 20:20:15,033 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:20:37,938 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:20:37,941 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingFilter : Запит: POST /api/accounts
+2024-09-25 20:20:37,976 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: createAccount
+2024-09-25 20:20:37,977 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Введені значення: [{"id":null,"owner":"Golov Iryna Mykolayivna","balance":5000.00}]
+2024-09-25 20:20:37,978 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:20:38,004 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: createAccount
+2024-09-25 20:20:38,004 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":15,"owner":"Golov Iryna Mykolayivna","balance":5000.00}
+2024-09-25 20:20:38,007 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:20:50,427 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:20:50,431 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingFilter : Запит: PUT /api/accounts/2
+2024-09-25 20:20:50,432 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: updateAccount
+2024-09-25 20:20:50,432 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Введені значення: [2,{"id":null,"owner":"Petrov Ivan Ivanovich","balance":1500.00}]
+2024-09-25 20:20:50,433 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:20:50,434 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:20:50,436 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: updateAccount
+2024-09-25 20:20:50,436 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":2,"owner":"Petrov Ivan Ivanovich","balance":1500.00}
+2024-09-25 20:20:50,438 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:21:04,463 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:21:04,467 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingFilter : Запит: DELETE /api/accounts/15
+2024-09-25 20:21:04,467 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: deleteAccount
+2024-09-25 20:21:04,468 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Введені значення: [15]
+2024-09-25 20:21:04,468 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:21:04,469 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: deleteById
+2024-09-25 20:21:04,480 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: deleteAccount
+2024-09-25 20:21:04,480 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":15,"owner":"Golov Iryna Mykolayivna","balance":5000.00}
+2024-09-25 20:21:04,481 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:21:09,986 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:21:09,989 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/accounts/balance/2500
+2024-09-25 20:21:09,990 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getAccountsByBalance
+2024-09-25 20:21:09,991 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Введені значення: [2500]
+2024-09-25 20:21:09,991 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByBalanceGreaterThan
+2024-09-25 20:21:09,994 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getAccountsByBalance
+2024-09-25 20:21:09,995 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":10,"owner":"Popov Volodymyr Denysovych","balance":7000.00},{"id":5,"owner":"Loban Petro Volodymyrovych","balance":3500.00},{"id":7,"owner":"Nomerka Matviy Vitaliyovych","balance":5000.00},{"id":13,"owner":"Arava Pavlo Valeriyovych","balance":2900.00},{"id":14,"owner":"Golova Iryna Mykolayivna","balance":3000.00}]
+2024-09-25 20:21:09,996 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:21:22,700 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/accounts/owner/Akhtemenko%20Denys%20Viktorovych
+2024-09-25 20:21:22,704 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getAccountsByOwner
+2024-09-25 20:21:22,705 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Введені значення: ["Akhtemenko Denys Viktorovych"]
+2024-09-25 20:21:22,705 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByOwner
+2024-09-25 20:21:22,708 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getAccountsByOwner
+2024-09-25 20:21:22,708 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":1,"owner":"Akhtemenko Denys Viktorovych","balance":1000.00}]
+2024-09-25 20:21:22,710 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:22:06,709 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/card
+2024-09-25 20:22:06,710 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getAllCards
+2024-09-25 20:22:06,710 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findAll
+2024-09-25 20:22:06,721 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getAllCards
+2024-09-25 20:22:06,723 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":3,"cardNumber":"3456789034567890","expiryDate":1793397600000,"cardType":"VISA"},{"id":5,"cardNumber":"1234555552345678","expiryDate":1767139200000,"cardType":"VISA"},{"id":2,"cardNumber":"2345678923456789","expiryDate":1732950000000,"cardType":"MASTERCARD"},{"id":4,"cardNumber":"4567890145678901","expiryDate":1696060800000,"cardType":"MASTERCARD"},{"id":1,"cardNumber":"1234567812345678","expiryDate":1767193200000,"cardType":"VISA"},{"id":6,"cardNumber":"1436513235776847","expiryDate":1690473600000,"cardType":"VISA"},{"id":7,"cardNumber":"8623568953865444","expiryDate":1753804800000,"cardType":"MASTERCARD"}]
+2024-09-25 20:22:06,726 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:22:09,961 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/card/1
+2024-09-25 20:22:09,962 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getCardById
+2024-09-25 20:22:09,962 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Введені значення: [1]
+2024-09-25 20:22:09,963 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:22:09,967 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getCardById
+2024-09-25 20:22:09,967 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":1,"cardNumber":"1234567812345678","expiryDate":1767193200000,"cardType":"VISA"}
+2024-09-25 20:22:09,969 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:23:35,756 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:23:35,759 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingFilter : Запит: POST /api/card
+2024-09-25 20:23:35,760 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: createCard
+2024-09-25 20:23:35,760 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Введені значення: [{"id":null,"cardNumber":"1555567812345000","expiryDate":1735603200000,"cardType":"VISA"}]
+2024-09-25 20:23:35,761 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: existsById
+2024-09-25 20:23:35,762 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:23:35,775 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: createCard
+2024-09-25 20:23:35,775 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":8,"cardNumber":"1555567812345000","expiryDate":1735603200000,"cardType":"VISA"}
+2024-09-25 20:23:35,777 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:25:15,486 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:25:15,489 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Запит: PUT /api/card/5
+2024-09-25 20:25:15,490 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: updateCard
+2024-09-25 20:25:15,491 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Введені значення: [5,{"id":null,"cardNumber":"1234555552346678","expiryDate":1767139200000,"cardType":"VISA"}]
+2024-09-25 20:25:15,491 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:25:15,492 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:25:15,510 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: updateCard
+2024-09-25 20:25:15,510 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":5,"cardNumber":"1234555552346678","expiryDate":1767139200000,"cardType":"VISA"}
+2024-09-25 20:25:15,511 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:25:26,975 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:25:26,978 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Запит: DELETE /api/card/7
+2024-09-25 20:25:26,979 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: deleteCard
+2024-09-25 20:25:26,979 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Введені значення: [7]
+2024-09-25 20:25:26,979 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:25:26,981 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: deleteById
+2024-09-25 20:25:26,994 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: deleteCard
+2024-09-25 20:25:26,994 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":7,"cardNumber":"8623568953865444","expiryDate":1753804800000,"cardType":"MASTERCARD"}
+2024-09-25 20:25:26,995 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:25:36,096 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/card/account/4
+2024-09-25 20:25:36,097 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getCardsByAccountId
+2024-09-25 20:25:36,097 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Введені значення: [4]
+2024-09-25 20:25:36,098 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByAccountId
+2024-09-25 20:25:36,102 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getCardsByAccountId
+2024-09-25 20:25:36,103 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":4,"cardNumber":"4567890145678901","expiryDate":1696060800000,"cardType":"MASTERCARD"}]
+2024-09-25 20:25:36,104 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:25:39,232 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/card/type/VISA
+2024-09-25 20:25:39,233 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getCardsByType
+2024-09-25 20:25:39,233 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Введені значення: ["VISA"]
+2024-09-25 20:25:39,233 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByCardType
+2024-09-25 20:25:39,238 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getCardsByType
+2024-09-25 20:25:39,239 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":3,"cardNumber":"3456789034567890","expiryDate":1793397600000,"cardType":"VISA"},{"id":1,"cardNumber":"1234567812345678","expiryDate":1767193200000,"cardType":"VISA"},{"id":6,"cardNumber":"1436513235776847","expiryDate":1690473600000,"cardType":"VISA"},{"id":8,"cardNumber":"1555567812345000","expiryDate":1735603200000,"cardType":"VISA"},{"id":5,"cardNumber":"1234555552346678","expiryDate":1767139200000,"cardType":"VISA"}]
+2024-09-25 20:25:39,240 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:25:46,927 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:25:46,929 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/users
+2024-09-25 20:25:46,930 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getAllUsers
+2024-09-25 20:25:46,931 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findAll
+2024-09-25 20:25:46,934 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getAllUsers
+2024-09-25 20:25:46,934 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":1,"username":"Akhtemenko Denys Viktorovych","password":"password1","role":"USER"},{"id":3,"username":"Sidorova Maria Sergeevna","password":"password3","role":"USER"},{"id":4,"username":"Volkov Nikolay Pavlovich","password":"password4","role":"USER"},{"id":5,"username":"Prokopenko Denys Ivanovich","password":"password2","role":"ADMIN"},{"id":10,"username":"Velichko Natalie Petrivna","password":"password1","role":"USER"},{"id":6,"username":"pop","password":"pass1","role":"ADMIN"},{"id":2,"username":"Petrov Ivan Ivanovich","password":"passiva131","role":"USER"},{"id":7,"username":" Porov Petro Denysovych","password":"passww111","role":"USER"},{"id":8,"username":"Zimina Katetyna Pavlovna","password":"paroll199","role":"USER"},{"id":9,"username":"Romanko Galyna Oleksandrivna","password":"rgo130091","role":"USER"}]
+2024-09-25 20:25:46,936 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:26:09,211 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:26:09,214 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/financial-products/4
+2024-09-25 20:26:09,216 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getFinancialProductById
+2024-09-25 20:26:09,216 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Введені значення: [4]
+2024-09-25 20:26:09,216 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:26:09,219 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getFinancialProductById
+2024-09-25 20:26:09,219 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":4,"userId":4,"accountId":4,"productType":"credit","amount":2000.00,"interestRate":6.00,"startDate":1711918800000,"endDate":1743368400000}
+2024-09-25 20:26:09,221 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:26:52,641 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:26:52,644 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingFilter : Запит: POST /api/financial-products
+2024-09-25 20:26:52,647 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: createFinancialProduct
+2024-09-25 20:26:52,647 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Введені значення: [{"id":null,"userId":8,"accountId":8,"productType":"deposit","amount":800.00,"interestRate":3.00,"startDate":1718524800000,"endDate":1816336800000}]
+2024-09-25 20:26:52,647 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:26:52,662 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: createFinancialProduct
+2024-09-25 20:26:52,663 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":10,"userId":8,"accountId":8,"productType":"deposit","amount":800.00,"interestRate":3.00,"startDate":1718524800000,"endDate":1816336800000}
+2024-09-25 20:26:52,664 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:27:01,749 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:27:01,752 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingFilter : Запит: PUT /api/financial-products/1
+2024-09-25 20:27:01,754 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: updateFinancialProduct
+2024-09-25 20:27:01,754 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Введені значення: [1,{"id":null,"userId":3,"accountId":3,"productType":"deposit","amount":1500.00,"interestRate":3.00,"startDate":1718496000000,"endDate":1718496000000}]
+2024-09-25 20:27:01,754 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:27:01,756 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:27:01,769 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: updateFinancialProduct
+2024-09-25 20:27:01,769 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":1,"userId":3,"accountId":3,"productType":"deposit","amount":1500.00,"interestRate":3.00,"startDate":1718496000000,"endDate":1718496000000}
+2024-09-25 20:27:01,770 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:27:09,498 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:27:09,500 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingFilter : Запит: DELETE /api/financial-products/3
+2024-09-25 20:27:09,501 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: deleteFinancialProduct
+2024-09-25 20:27:09,501 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Введені значення: [3]
+2024-09-25 20:27:09,501 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: deleteById
+2024-09-25 20:27:09,503 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: deleteFinancialProduct
+2024-09-25 20:27:09,504 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:27:25,635 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:27:25,637 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/financial-products/product-type/credit
+2024-09-25 20:27:25,638 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getFinancialProductsByProductType
+2024-09-25 20:27:25,638 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Введені значення: ["credit"]
+2024-09-25 20:27:25,639 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByProductType
+2024-09-25 20:27:25,641 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getFinancialProductsByProductType
+2024-09-25 20:27:25,641 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":4,"userId":4,"accountId":4,"productType":"credit","amount":2000.00,"interestRate":6.00,"startDate":1711918800000,"endDate":1743368400000}]
+2024-09-25 20:27:25,642 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:27:30,922 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:27:30,925 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/financial-products/amount/999
+2024-09-25 20:27:30,926 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getFinancialProductsByAmount
+2024-09-25 20:27:30,926 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Введені значення: [999]
+2024-09-25 20:27:30,927 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByAmountGreaterThan
+2024-09-25 20:27:30,929 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getFinancialProductsByAmount
+2024-09-25 20:27:30,929 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":2,"userId":2,"accountId":2,"productType":"mortgage","amount":1000.00,"interestRate":4.50,"startDate":1706738400000,"endDate":2022271200000},{"id":4,"userId":4,"accountId":4,"productType":"credit","amount":2000.00,"interestRate":6.00,"startDate":1711918800000,"endDate":1743368400000},{"id":5,"userId":10,"accountId":10,"productType":"deposit","amount":9000.00,"interestRate":5.00,"startDate":1757019600000,"endDate":1809982800000},{"id":1,"userId":3,"accountId":3,"productType":"deposit","amount":1500.00,"interestRate":3.00,"startDate":1718496000000,"endDate":1718496000000}]
+2024-09-25 20:27:30,930 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:27:34,900 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:27:34,903 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/financial-products/start-date/2024-01-01%2000:00:00.000000
+2024-09-25 20:27:34,904 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getFinancialProductsByStartDate
+2024-09-25 20:27:34,904 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Введені значення: [1704060000000]
+2024-09-25 20:27:34,904 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByStartDate
+2024-09-25 20:27:34,919 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getFinancialProductsByStartDate
+2024-09-25 20:27:34,919 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: []
+2024-09-25 20:27:34,928 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:28:03,115 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:28:03,118 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/financial-products/start-date/2024-04-01%2000:00:00.000000
+2024-09-25 20:28:03,119 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getFinancialProductsByStartDate
+2024-09-25 20:28:03,119 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Введені значення: [1711918800000]
+2024-09-25 20:28:03,119 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByStartDate
+2024-09-25 20:28:03,121 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getFinancialProductsByStartDate
+2024-09-25 20:28:03,121 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":4,"userId":4,"accountId":4,"productType":"credit","amount":2000.00,"interestRate":6.00,"startDate":1711918800000,"endDate":1743368400000}]
+2024-09-25 20:28:03,122 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:28:06,696 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:28:06,698 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/financial-products/year/2025
+2024-09-25 20:28:06,700 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getFinancialProductsByYear
+2024-09-25 20:28:06,700 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Введені значення: [2025]
+2024-09-25 20:28:06,700 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByStartDateYear
+2024-09-25 20:28:06,720 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getFinancialProductsByYear
+2024-09-25 20:28:06,720 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":5,"userId":10,"accountId":10,"productType":"deposit","amount":9000.00,"interestRate":5.00,"startDate":1757019600000,"endDate":1809982800000}]
+2024-09-25 20:28:06,722 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:28:35,617 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/transactions
+2024-09-25 20:28:35,618 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getAllTransactions
+2024-09-25 20:28:35,618 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findAll
+2024-09-25 20:28:35,624 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getAllTransactions
+2024-09-25 20:28:35,625 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":2,"account":{"id":2,"owner":"Petrov Ivan Ivanovich","balance":1500.00},"amount":200.00,"date":1717315200000,"type":"withdrawal"},{"id":4,"account":{"id":4,"owner":"Volkov Nikolay Pavlovich","balance":500.00},"amount":400.00,"date":1717495200000,"type":"withdrawal"},{"id":1,"account":{"id":1,"owner":"Akhtemenko Denys Viktorovych","balance":1000.00},"amount":100.00,"date":1717225200000,"type":"money transfer"},{"id":3,"account":{"id":3,"owner":"Sidorova Maria Sergeevna","balance":1500.00},"amount":1000.00,"date":1718445600000,"type":"tax payment"},{"id":5,"account":{"id":5,"owner":"Loban Petro Volodymyrovych","balance":3500.00},"amount":2000.00,"date":1727280000000,"type":"tax payment"}]
+2024-09-25 20:28:35,627 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:28:42,127 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/transactions/1
+2024-09-25 20:28:42,128 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getTransactionById
+2024-09-25 20:28:42,128 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Введені значення: [1]
+2024-09-25 20:28:42,129 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:28:42,131 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getTransactionById
+2024-09-25 20:28:42,132 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":1,"account":{"id":1,"owner":"Akhtemenko Denys Viktorovych","balance":1000.00},"amount":100.00,"date":1717225200000,"type":"money transfer"}
+2024-09-25 20:28:42,134 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:29:31,766 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:29:31,769 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingFilter : Запит: POST /api/transactions
+2024-09-25 20:29:31,770 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: createTransaction
+2024-09-25 20:29:31,770 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Введені значення: [{"id":null,"account":{"id":8,"owner":null,"balance":null},"amount":1900.00,"date":1707645600000,"type":"money transfer"}]
+2024-09-25 20:29:31,770 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:29:31,772 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:29:31,785 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: createTransaction
+2024-09-25 20:29:31,785 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":15,"account":{"id":8,"owner":"Kovalenko Maksym Volodymyrovych","balance":700.00},"amount":1900.00,"date":1707645600000,"type":"money transfer"}
+2024-09-25 20:29:31,787 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:30:05,740 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:30:05,742 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingFilter : Запит: PUT /api/transactions/3
+2024-09-25 20:30:05,744 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: updateTransaction
+2024-09-25 20:30:05,744 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Введені значення: [3,{"id":null,"account":{"id":3,"owner":null,"balance":null},"amount":800.00,"date":1718445600000,"type":"tax payment"}]
+2024-09-25 20:30:05,744 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:30:05,747 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:30:05,759 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: updateTransaction
+2024-09-25 20:30:05,759 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":3,"account":{"id":3,"owner":"Sidorova Maria Sergeevna","balance":1500.00},"amount":800.00,"date":1718445600000,"type":"tax payment"}
+2024-09-25 20:30:05,760 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:30:09,689 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:30:09,692 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Запит: DELETE /api/transactions/5
+2024-09-25 20:30:09,693 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: deleteTransaction
+2024-09-25 20:30:09,693 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Введені значення: [5]
+2024-09-25 20:30:09,693 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:30:09,694 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getTransactionById
+2024-09-25 20:30:09,695 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":5,"account":{"id":5,"owner":"Loban Petro Volodymyrovych","balance":3500.00},"amount":2000.00,"date":1727280000000,"type":"tax payment"}
+2024-09-25 20:30:09,695 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: deleteById
+2024-09-25 20:30:09,707 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: deleteTransaction
+2024-09-25 20:30:09,709 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:30:12,816 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:30:12,819 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/transactions/date/2024-06-03%2012:00:00.000000
+2024-09-25 20:30:12,820 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getTransactionsByDate
+2024-09-25 20:30:12,820 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Введені значення: [1717405200000]
+2024-09-25 20:30:12,821 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByDate
+2024-09-25 20:30:12,823 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getTransactionsByDate
+2024-09-25 20:30:12,823 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: []
+2024-09-25 20:30:12,824 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:30:15,943 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:30:15,946 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/transactions/type/withdrawal
+2024-09-25 20:30:15,947 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getTransactionsByType
+2024-09-25 20:30:15,947 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Введені значення: ["withdrawal"]
+2024-09-25 20:30:15,948 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByType
+2024-09-25 20:30:15,951 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getTransactionsByType
+2024-09-25 20:30:15,951 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":2,"account":{"id":2,"owner":"Petrov Ivan Ivanovich","balance":1500.00},"amount":200.00,"date":1717315200000,"type":"withdrawal"},{"id":4,"account":{"id":4,"owner":"Volkov Nikolay Pavlovich","balance":500.00},"amount":400.00,"date":1717495200000,"type":"withdrawal"}]
+2024-09-25 20:30:15,952 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:30:46,135 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:30:46,138 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/transactions/date/2024-06-15%2013:00:00.000000
+2024-09-25 20:30:46,139 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getTransactionsByDate
+2024-09-25 20:30:46,139 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Введені значення: [1718445600000]
+2024-09-25 20:30:46,139 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByDate
+2024-09-25 20:30:46,141 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getTransactionsByDate
+2024-09-25 20:30:46,142 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":3,"account":{"id":3,"owner":"Sidorova Maria Sergeevna","balance":1500.00},"amount":800.00,"date":1718445600000,"type":"tax payment"}]
+2024-09-25 20:30:46,143 INFO  [http-nio-8080-exec-2] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:30:51,341 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:30:51,344 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/transactions/type/withdrawal
+2024-09-25 20:30:51,345 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getTransactionsByType
+2024-09-25 20:30:51,345 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Введені значення: ["withdrawal"]
+2024-09-25 20:30:51,345 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByType
+2024-09-25 20:30:51,348 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getTransactionsByType
+2024-09-25 20:30:51,348 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":2,"account":{"id":2,"owner":"Petrov Ivan Ivanovich","balance":1500.00},"amount":200.00,"date":1717315200000,"type":"withdrawal"},{"id":4,"account":{"id":4,"owner":"Volkov Nikolay Pavlovich","balance":500.00},"amount":400.00,"date":1717495200000,"type":"withdrawal"}]
+2024-09-25 20:30:51,349 INFO  [http-nio-8080-exec-3] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:30:54,450 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:30:54,453 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/transactions/amount/200
+2024-09-25 20:30:54,454 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getTransactionsByAmount
+2024-09-25 20:30:54,454 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Введені значення: [200]
+2024-09-25 20:30:54,454 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByAmountGreaterThan
+2024-09-25 20:30:54,458 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getTransactionsByAmount
+2024-09-25 20:30:54,458 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":4,"account":{"id":4,"owner":"Volkov Nikolay Pavlovich","balance":500.00},"amount":400.00,"date":1717495200000,"type":"withdrawal"},{"id":15,"account":{"id":8,"owner":"Kovalenko Maksym Volodymyrovych","balance":700.00},"amount":1900.00,"date":1707645600000,"type":"money transfer"},{"id":3,"account":{"id":3,"owner":"Sidorova Maria Sergeevna","balance":1500.00},"amount":800.00,"date":1718445600000,"type":"tax payment"}]
+2024-09-25 20:30:54,459 INFO  [http-nio-8080-exec-1] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:31:19,899 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/users
+2024-09-25 20:31:19,900 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getAllUsers
+2024-09-25 20:31:19,900 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findAll
+2024-09-25 20:31:19,903 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getAllUsers
+2024-09-25 20:31:19,903 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":1,"username":"Akhtemenko Denys Viktorovych","password":"password1","role":"USER"},{"id":3,"username":"Sidorova Maria Sergeevna","password":"password3","role":"USER"},{"id":4,"username":"Volkov Nikolay Pavlovich","password":"password4","role":"USER"},{"id":5,"username":"Prokopenko Denys Ivanovich","password":"password2","role":"ADMIN"},{"id":10,"username":"Velichko Natalie Petrivna","password":"password1","role":"USER"},{"id":6,"username":"pop","password":"pass1","role":"ADMIN"},{"id":2,"username":"Petrov Ivan Ivanovich","password":"passiva131","role":"USER"},{"id":7,"username":" Porov Petro Denysovych","password":"passww111","role":"USER"},{"id":8,"username":"Zimina Katetyna Pavlovna","password":"paroll199","role":"USER"},{"id":9,"username":"Romanko Galyna Oleksandrivna","password":"rgo130091","role":"USER"}]
+2024-09-25 20:31:19,904 INFO  [http-nio-8080-exec-4] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:31:23,487 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/users/1
+2024-09-25 20:31:23,488 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getUserById
+2024-09-25 20:31:23,488 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Введені значення: [1]
+2024-09-25 20:31:23,489 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:31:23,491 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getUserById
+2024-09-25 20:31:23,491 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":1,"username":"Akhtemenko Denys Viktorovych","password":"password1","role":"USER"}
+2024-09-25 20:31:23,494 INFO  [http-nio-8080-exec-5] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:31:36,967 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:31:36,970 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingFilter : Запит: POST /api/users
+2024-09-25 20:31:36,972 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: createUser
+2024-09-25 20:31:36,972 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Введені значення: [{"id":null,"username":"Domin Dmytro Valentynovych","password":"pass31","role":"USER"}]
+2024-09-25 20:31:36,973 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:31:36,988 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: createUser
+2024-09-25 20:31:36,988 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":12,"username":"Domin Dmytro Valentynovych","password":"pass31","role":"USER"}
+2024-09-25 20:31:36,989 INFO  [http-nio-8080-exec-6] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:32:00,374 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:32:00,376 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingFilter : Запит: PUT /api/users/2
+2024-09-25 20:32:00,378 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: updateUser
+2024-09-25 20:32:00,378 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Введені значення: [2,{"id":null,"username":"Petrov Ivan Ivanovich","password":"suppass131","role":"USER"}]
+2024-09-25 20:32:00,378 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:32:00,379 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: save
+2024-09-25 20:32:00,392 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: updateUser
+2024-09-25 20:32:00,392 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":2,"username":"Petrov Ivan Ivanovich","password":"suppass131","role":"USER"}
+2024-09-25 20:32:00,393 INFO  [http-nio-8080-exec-7] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:32:09,512 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:32:09,514 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Запит: DELETE /api/users/9
+2024-09-25 20:32:09,515 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: deleteUser
+2024-09-25 20:32:09,515 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Введені значення: [9]
+2024-09-25 20:32:09,515 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findById
+2024-09-25 20:32:09,517 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: deleteById
+2024-09-25 20:32:09,529 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: deleteUser
+2024-09-25 20:32:09,529 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":9,"username":"Romanko Galyna Oleksandrivna","password":"rgo130091","role":"USER"}
+2024-09-25 20:32:09,530 INFO  [http-nio-8080-exec-8] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:32:12,227 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/users/username/pop
+2024-09-25 20:32:12,228 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getUserByUsername
+2024-09-25 20:32:12,228 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Введені значення: ["pop"]
+2024-09-25 20:32:12,228 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByUsername
+2024-09-25 20:32:12,230 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getUserByUsername
+2024-09-25 20:32:12,231 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: {"id":6,"username":"pop","password":"pass1","role":"ADMIN"}
+2024-09-25 20:32:12,231 INFO  [http-nio-8080-exec-9] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:32:14,594 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Запит: GET /api/users/role/ADMIN
+2024-09-25 20:32:14,595 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод контролера викликаний: getUsersByRole
+2024-09-25 20:32:14,596 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Введені значення: ["ADMIN"]
+2024-09-25 20:32:14,596 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод репозиторію викликаний: findByRole
+2024-09-25 20:32:14,599 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Метод сервісу викликаний: getUsersByRole
+2024-09-25 20:32:14,599 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingAspect : Результат у форматі JSON: [{"id":5,"username":"Prokopenko Denys Ivanovich","password":"password2","role":"ADMIN"},{"id":6,"username":"pop","password":"pass1","role":"ADMIN"}]
+2024-09-25 20:32:14,600 INFO  [http-nio-8080-exec-10] com.application.cursova.aspect.LoggingFilter : Відповідь: статус 200
+2024-09-25 20:32:17,041 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25 20:32:17,042 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2024-09-25 20:32:17,045 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
