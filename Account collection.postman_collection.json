@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "825ea5e8-ba93-493c-bbe7-4a3fe0808c83",
+		"name": "Account collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33585831"
+	},
+	"item": [
+		{
+			"name": "1. Get all user accounts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Get account by ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/accounts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Create new account",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"owner\": \"Golov Iryna Mykolayivna\",\r\n  \"balance\": 5000.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Update account data",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"owner\": \"Petrov Ivan Ivanovich\",\r\n  \"balance\": 1500.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/accounts/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Delete account ",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/accounts/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Get all accounts where the balance is higher than the value",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/accounts/balance/2500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"balance",
+						"2500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Get accounts by name owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/accounts/owner/Akhtemenko Denys Viktorovych",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"owner",
+						"Akhtemenko Denys Viktorovych"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "1acb1342-b8f3-4548-984e-56a5170a3de6",
+		"name": "Transaction collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33585831"
+	},
+	"item": [
+		{
+			"name": "1. Get all transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Get transaction by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Create new transaction",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account\": {\r\n    \"id\": 8\r\n  },\r\n  \"amount\": 1900.00,\r\n  \"date\": \"2024-02-11T10:00:00.000+00:00\",\r\n  \"type\": \"money transfer\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Updata data of transaction",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account\": {\r\n    \"id\": 3\r\n  },\r\n  \"amount\": 800.00,\r\n  \"date\": \"2024-06-15T10:00:00.000+00:00\",\r\n  \"type\": \"tax payment\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Delete transaction data",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Get transactions by Date",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/date/2024-06-15 13:00:00.000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"date",
+						"2024-06-15 13:00:00.000000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Get transactions by Type",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/type/withdrawal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"type",
+						"withdrawal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. Get transactions with an amount greater than the value",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/amount/200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"amount",
+						"200"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "67db3ce3-9d32-4d53-91ca-c511b9fd96e5",
+		"name": "Financial-products collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33585831"
+	},
+	"item": [
+		{
+			"name": "1. Get all financial-products data",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Get financial-products by id number",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/financial-products/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"financial-products",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Create new financial order",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 8,\r\n    \"accountId\": 8,\r\n    \"productType\": \"deposit\",\r\n    \"amount\": 800.00,\r\n    \"interestRate\": 3.00,\r\n    \"startDate\": \"2024-06-16T08:00:00.000+00:00\",\r\n    \"endDate\": \"2027-07-23T10:00:00.000+00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/financial-products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"financial-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Update data for financial product service",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 3,\r\n    \"accountId\": 3,\r\n    \"productType\": \"deposit\",\r\n    \"amount\": 1500.00,\r\n    \"interestRate\": 3.00,\r\n    \"startDate\": \"2024-06-16T00:00:00.000+00:00\",\r\n    \"endDate\": \"2024-06-16T00:00:00.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/financial-products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"financial-products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Delete Financial Product",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/financial-products/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"financial-products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Get financial-product by product type",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/financial-products/product-type/credit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"financial-products",
+						"product-type",
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Get Financial Products by Amount more than the set value",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/financial-products/amount/999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"financial-products",
+						"amount",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. Get Financial Products by Start Date",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/financial-products/start-date/2024-04-01 00:00:00.000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"financial-products",
+						"start-date",
+						"2024-04-01 00:00:00.000000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. Get Financial Products by year of start services",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pop",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/financial-products/year/2025",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"financial-products",
+						"year",
+						"2025"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
